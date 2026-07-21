@@ -1,16 +1,16 @@
 //%attributes = {"invisible":true}
-#DECLARE($rgb : Integer:C285)->$result : Text:C284
+#DECLARE($rgb : Integer)->$result : Text
 
-var $r; $g; $b : Integer:C285
+var $r; $g; $b : Integer
 $r:=($rgb >> 16) & 0x0000FF
 $g:=($rgb >> 8) & 0x0000FF
 $b:=$rgb & 0x0000FF
 
-var $hex : Text:C284
+var $hex : Text
 $hex:=""
 
-var $i; $val : Integer:C285
-var $digits : Text:C284
+var $i; $val : Integer
+var $digits : Text
 $digits:="0123456789ABCDEF"
 
 For ($i; 1; 3)
