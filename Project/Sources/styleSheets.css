@@ -1,0 +1,81 @@
+/* ============================================================
+   Supports: prefers-color-scheme (light/dark)
+   ============================================================ */
+
+@media (prefers-color-scheme: light) {
+
+	.hdi-form-bg {
+		fill: #FFFFFF;
+	}
+
+	.hdi-label {
+		stroke: #212121;
+	}
+
+	.hdi-text-muted {
+		stroke: #696969;
+	}
+
+	.hdi-link {
+		stroke: #1E90FF;
+	}
+
+	.hdi-panel-bg {
+		fill: #C0C0C0;
+	}
+
+	.meta-double-out-of-range {
+		fill: #FF4040;
+		visibility: hidden;
+	}
+
+	.meta-out-of-range {
+		fill: #FFCCCC;
+		visibility: hidden;
+	}
+
+	.meta-perfect-value {
+		fill: #B8EDB8;
+		visibility: hidden;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.hdi-form-bg {
+		fill: #1E1E1E;
+	}
+
+	.hdi-label {
+		stroke: #E0E0E0;
+	}
+
+	.hdi-text-muted {
+		stroke: #A0A0A0;
+	}
+
+	.hdi-link {
+		stroke: #5CB8FF;
+	}
+
+	.hdi-panel-bg {
+		fill: #3A3A3A;
+	}
+
+	.meta-double-out-of-range {
+		fill: #CC3333;
+		visibility: hidden;
+	}
+
+	.meta-out-of-range {
+		fill: #5C2020;
+		visibility: hidden;
+	}
+
+	.meta-perfect-value {
+		fill: #1E4D1E;
+		visibility: hidden;
+	}
+
+}

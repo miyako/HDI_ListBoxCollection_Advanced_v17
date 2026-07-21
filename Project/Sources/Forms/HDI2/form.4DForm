@@ -53,6 +53,33 @@
 					"events": [
 						"onClick"
 					]
+				},
+				"refDoubleOutOfRange": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "meta-double-out-of-range",
+					"stroke": "transparent"
+				},
+				"refOutOfRange": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "meta-out-of-range",
+					"stroke": "transparent"
+				},
+				"refPerfectValue": {
+					"type": "rectangle",
+					"top": 0,
+					"left": 0,
+					"width": 1,
+					"height": 1,
+					"class": "meta-perfect-value",
+					"stroke": "transparent"
 				}
 			}
 		},
@@ -133,7 +160,7 @@
 					"selectionMode": "single",
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "hidden",
-					"alternateFill": "#F8FCFF",
+					"alternateFill": "automaticAlternate",
 					"textAlign": "center",
 					"verticalAlign": "middle",
 					"events": [
@@ -152,7 +179,6 @@
 							"enterable": false,
 							"stroke": "automatic",
 							"fill": "automatic",
-							"alternateFill": "#F8FCFF",
 							"textAlign": "center",
 							"verticalAlign": "middle",
 							"events": [
@@ -484,5 +510,17 @@
 				}
 			}
 		}
-	]
+	],
+	"geometryStamp": 4,
+	"$4d": {
+		"version": "1",
+		"kind": "form"
+	},
+	"editor": {
+		"activeView": "View 1",
+		"defaultView": "View 1",
+		"views": {
+			"View 1": {}
+		}
+	}
 }
