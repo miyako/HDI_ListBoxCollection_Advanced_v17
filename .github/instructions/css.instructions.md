@@ -1,12 +1,12 @@
 ---
-description: Rules for adding dark mode support to 4D projects using CSS stylesheets and automatic color values
+description: "Rules for using CSS stylesheets in 4D projects — dark mode support, automatic color values, media queries, specificity, and runtime color detection"
 ---
 
-# 4D Dark Mode Support — Agent Instructions
+# 4D CSS Stylesheets — Agent Instructions
 
 ## Overview
 
-4D applications can support macOS/Windows dark mode via a combination of automatic color values, CSS stylesheets with `prefers-color-scheme` media queries, and runtime color detection using hidden reference objects.
+4D applications can use CSS stylesheets to control form object appearance, including macOS/Windows dark mode support via automatic color values, `prefers-color-scheme` media queries, and runtime color detection using hidden reference objects.
 
 ---
 
@@ -178,7 +178,7 @@ Note: `visibility: hidden` is set in **both** media queries to ensure the rectan
 #### Step 3: Read at Runtime
 
 ```4d
-C_LONGINT($fg; $bg)
+var $fg; $bg : Integer
 OBJECT GET RGB COLORS(*; "refMyColour"; $fg; $bg)
   // $bg contains the resolved fill colour as a longint (0x00RRGGBB)
 ```
@@ -189,22 +189,18 @@ Use a helper method to convert the longint to `#RRGGBB`:
 
 ```4d
   // RGBToHex method
-  // $1 : Longint - RGB colour value (0x00RRGGBB)
-  // $0 : Text - "#RRGGBB"
+#DECLARE($rgb : Integer)->$result : Text
 
-C_LONGINT($1)
-C_TEXT($0)
+var $r; $g; $b : Integer
+$r:=($rgb >> 16) & 0x0000FF
+$g:=($rgb >> 8) & 0x0000FF
+$b:=$rgb & 0x0000FF
 
-C_LONGINT($r; $g; $b)
-$r:=($1 >> 16) & 0x0000FF
-$g:=($1 >> 8) & 0x0000FF
-$b:=$1 & 0x0000FF
-
-C_TEXT($hex)
+var $hex : Text
 $hex:=""
 
-C_LONGINT($i; $val)
-C_TEXT($digits)
+var $i; $val : Integer
+var $digits : Text
 $digits:="0123456789ABCDEF"
 
 For ($i; 1; 3)
@@ -219,7 +215,7 @@ For ($i; 1; 3)
   $hex:=$hex+$digits[[$val\16+1]]+$digits[[$val%16+1]]
 End for 
 
-$0:="#"+$hex
+$result:="#"+$hex
 ```
 
 ### Use Case: Listbox Meta Expression
@@ -235,9 +231,6 @@ When writing 4D methods with tokenised syntax (`:Cnnn`), use the correct command
 | Command | Token | Notes |
 |---------|-------|-------|
 | `OBJECT GET RGB COLORS` | `:C1074` | Reads foreground/background of a named object |
-| `C_LONGINT` | `:C283` | Declare longint variable |
-| `C_TEXT` | `:C284` | Declare text variable |
-| `C_OBJECT` | `:C1216` | Declare object variable |
 | `New object` | `:C1471` | Create a new object |
 | `Form` | `:C1466` | Access the form data object |
 
