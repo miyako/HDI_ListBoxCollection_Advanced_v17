@@ -470,7 +470,8 @@
 							},
 							"truncateMode": "none"
 						}
-					]
+					],
+					"resizingMode": "legacy"
 				},
 				"infoTest": {
 					"type": "input",
