@@ -10,6 +10,26 @@
         <source>Quit</source>
         <target>終了</target>
       </trans-unit>
+      <trans-unit id="BtnClose" resname="BtnClose">
+        <source>Close</source>
+        <target>閉じる</target>
+      </trans-unit>
+      <trans-unit id="ErrorViewProMain" resname="ErrorViewProMain">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</source>
+        <target>申し訳ありません。この"How do I..." (HDI) サンプルは、4D View Proの機能を使用しています。</target>
+      </trans-unit>
+      <trans-unit id="ErrorViewProSub" resname="ErrorViewProSub">
+        <source>You must have a valid 4D View Pro license to continue.</source>
+        <target>続行するには、有効な4D View Proライセンスが必要です。</target>
+      </trans-unit>
+      <trans-unit id="ErrorWriteProMain" resname="ErrorWriteProMain">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</source>
+        <target>申し訳ありません。この"How do I..." (HDI) サンプルは、4D Write Proの機能を使用しています。</target>
+      </trans-unit>
+      <trans-unit id="ErrorWriteProSub" resname="ErrorWriteProSub">
+        <source>You must have a valid 4D Write Pro license to continue.</source>
+        <target>続行するには、有効な4D Write Proライセンスが必要です。</target>
+      </trans-unit>
       <trans-unit id="HDI_Title" resname="HDI_Title">
         <source>Display a multi-level collection in multiple list boxes?</source>
         <target>複数のリストボックスに複階層コレクションを表示するの？</target>
