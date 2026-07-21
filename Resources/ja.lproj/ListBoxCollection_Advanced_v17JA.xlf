@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="http://www.w3.org/1999/xhtml" version="1.0">
+  <file datatype="x-STR#" original="undefined" product-version="v17" source-language="en-US" target-language="ja">
+    <header>
+      <note/>
+    </header>
+    <body>
+
+        <!-- Work Area -->
+<group resname="[ProjectForm]">
+<group resname="HDI">
+<trans-unit id="1" resname="BtnDemo">
+<source>Demo</source>
+<target>スタート</target>
+</trans-unit>
+<trans-unit id="2" resname="TxtVersion">
+<source>{version} and above</source>
+<target>{version} 以降...</target>
+</trans-unit>
+<trans-unit id="3" resname="labelVersion">
+<source>Version:</source>
+<target>バージョン:</target>
+</trans-unit>
+<trans-unit id="4" resname="labelBlog">
+<source>Blog:</source>
+<target>Blog:</target>
+</trans-unit>
+<trans-unit id="5" resname="labelInfo">
+<source>Info:</source>
+<target>概要:</target>
+</trans-unit>
+<trans-unit id="6" resname="txtTitle">
+<source>• title •</source>
+<target>• title •</target>
+</trans-unit>
+<trans-unit id="7" resname="Text">
+<source>How do I…</source>
+<target>どうやって...</target>
+</trans-unit>
+<trans-unit id="8" resname="ErrorMainText">
+<source>Sorry, this "How do I" (HDI) example must
+be used with a newer version of 4D
+({version} and above)</source>
+<target>申し訳ありません。この"How do I..." (HDI) サンプルは、より新しいバージョンの4D（{version} 以降）で開く必要があります。</target>
+</trans-unit>
+<trans-unit id="9" resname="ErrorSubText">
+<source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+<target>このHDIをデザインモードで開かないでください。
+開いてしまった場合、フォームやメソッドが不完全になってしまう恐れがあります。</target>
+</trans-unit>
+</group>
+<group resname="HDI2">
+<trans-unit id="1" resname="btnLoad">
+<source>Load result</source>
+<target>別の検査結果を表示する</target>
+</trans-unit>
+<trans-unit id="2" resname="Text1">
+<source>Lastname:</source>
+<target>名字:</target>
+</trans-unit>
+<trans-unit id="3" resname="Text2">
+<source>Firstname:</source>
+<target>名前:</target>
+</trans-unit>
+<trans-unit id="4" resname="Text3">
+<source>Exam date:</source>
+<target>検査日:</target>
+</trans-unit>
+<trans-unit id="5" resname="Text4">
+<source>Doctor:</source>
+<target>医師:</target>
+</trans-unit>
+</group>
+</group>
+
+
+
+    </body>
+  </file>
+</xliff>

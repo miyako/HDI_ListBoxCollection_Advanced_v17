@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms/HDI2" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="HDI2_TabDescription" resname="HDI2_TabDescription">
+        <source>Description</source>
+        <target>説明</target>
+      </trans-unit>
+      <trans-unit id="HDI2_TabSample" resname="HDI2_TabSample">
+        <source>Sample</source>
+        <target>サンプル</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderCategory" resname="HDI2_HeaderCategory">
+        <source>Category</source>
+        <target>カテゴリ</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderTestItem" resname="HDI2_HeaderTestItem">
+        <source>Test item</source>
+        <target>検査項目</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderValue" resname="HDI2_HeaderValue">
+        <source>Value</source>
+        <target>値</target>
+      </trans-unit>
+      <trans-unit id="HDI2_HeaderUnit" resname="HDI2_HeaderUnit">
+        <source>Unit</source>
+        <target>単位</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

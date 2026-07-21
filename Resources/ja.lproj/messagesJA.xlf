@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Methods" source-language="en" target-language="ja">
+    <body>
+      <trans-unit id="AlertVersionTooOld" resname="AlertVersionTooOld">
+        <source>Sorry, this "How do I" (HDI) example must be used with a newer version of 4D (v16 R5 and above)</source>
+        <target>申し訳ありません。この"How do I..." (HDI) サンプルは、より新しいバージョンの4D（v16 R5 以降）で開く必要があります。</target>
+      </trans-unit>
+      <trans-unit id="AlertButtonQuit" resname="AlertButtonQuit">
+        <source>Quit</source>
+        <target>終了</target>
+      </trans-unit>
+      <trans-unit id="HDI_Title" resname="HDI_Title">
+        <source>Display a multi-level collection in multiple list boxes?</source>
+        <target>複数のリストボックスに複階層コレクションを表示するの？</target>
+      </trans-unit>
+      <trans-unit id="HDI_Info" resname="HDI_Info">
+        <source>Collection type list box</source>
+        <target>コレクション型リストボックス</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

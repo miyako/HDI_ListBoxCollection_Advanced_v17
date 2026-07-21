@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file datatype="plaintext" original="Project/Sources/Forms" source-language="en" target-language="en">
+    <body>
+
+      <group resname="[ProjectForm]">
+        <group resname="HDI">
+          <trans-unit id="1" resname="BtnDemo">
+            <source>Demo</source>
+            <target>Demo</target>
+          </trans-unit>
+          <trans-unit id="2" resname="TxtVersion">
+            <source>{version} and above</source>
+            <target>{version} and above</target>
+          </trans-unit>
+          <trans-unit id="3" resname="labelVersion">
+            <source>Version:</source>
+            <target>Version:</target>
+          </trans-unit>
+          <trans-unit id="4" resname="labelBlog">
+            <source>Blog:</source>
+            <target>Blog:</target>
+          </trans-unit>
+          <trans-unit id="5" resname="labelInfo">
+            <source>Info:</source>
+            <target>Info:</target>
+          </trans-unit>
+          <trans-unit id="6" resname="txtTitle">
+            <source>• title •</source>
+            <target>• title •</target>
+          </trans-unit>
+          <trans-unit id="7" resname="Text">
+            <source>How do I…</source>
+            <target>How do I…</target>
+          </trans-unit>
+          <trans-unit id="8" resname="ErrorMainText">
+            <source>Sorry, this "How do I" (HDI) example must
+be used with a newer version of 4D
+({version} and above)</source>
+            <target>Sorry, this "How do I" (HDI) example must
+be used with a newer version of 4D
+({version} and above)</target>
+          </trans-unit>
+          <trans-unit id="9" resname="ErrorSubText">
+            <source>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</source>
+            <target>Do not attempt to open this HDI in design mode using this version; if you do so, forms and/or methods could be altered because of missing functionality.</target>
+          </trans-unit>
+        </group>
+        <group resname="HDI2">
+          <trans-unit id="1" resname="btnLoad">
+            <source>Load result</source>
+            <target>Load result</target>
+          </trans-unit>
+          <trans-unit id="2" resname="Text1">
+            <source>Lastname:</source>
+            <target>Lastname:</target>
+          </trans-unit>
+          <trans-unit id="3" resname="Text2">
+            <source>Firstname:</source>
+            <target>Firstname:</target>
+          </trans-unit>
+          <trans-unit id="4" resname="Text3">
+            <source>Exam date:</source>
+            <target>Exam date:</target>
+          </trans-unit>
+          <trans-unit id="5" resname="Text4">
+            <source>Doctor:</source>
+            <target>Doctor:</target>
+          </trans-unit>
+        </group>
+      </group>
+
+    </body>
+  </file>
+</xliff>
