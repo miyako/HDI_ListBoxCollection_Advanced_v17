@@ -38,3 +38,4 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 | Liquid glass buttons | 1,105,102 | 7,292 | 18 |
 | Hide subroutine methods | 859,694 | 6,074 | 17 |
 | **Total** | **25,539,511** | **127,994** | **425** |
+| [`miyako-disable-truncate-ellipsis`](../../tree/miyako-disable-truncate-ellipsis) | Disable truncate-with-ellipsis and automatic-column-resize on all listbox columns | [listbox.instructions.md](.github/instructions/listbox.instructions.md) |
