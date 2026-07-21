@@ -59,7 +59,6 @@
 					"top": 520,
 					"left": 614,
 					"width": 90,
-					"height": 20,
 					"action": "Accept",
 					"shortcutKey": "[Return]",
 					"text": "Demo",
