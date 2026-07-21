@@ -133,8 +133,8 @@
 					"top": 50,
 					"left": 40,
 					"width": 175,
-					"height": 20,
 					"text": "Load result",
+					"class": "default",
 					"focusable": false,
 					"method": "ObjectMethods/btnLoad.4dm",
 					"events": [
