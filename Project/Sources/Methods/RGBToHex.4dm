@@ -1,21 +1,16 @@
 //%attributes = {"invisible":true}
-  // Convert a longint RGB colour (0x00RRGGBB) to a "#RRGGBB" string
-  // $1 : Longint - RGB colour value
-  // $0 : Text - hex colour string
+#DECLARE($rgb : Integer:C285)->$result : Text:C284
 
-C_LONGINT:C283($1)
-C_TEXT:C284($0)
+var $r; $g; $b : Integer:C285
+$r:=($rgb >> 16) & 0x0000FF
+$g:=($rgb >> 8) & 0x0000FF
+$b:=$rgb & 0x0000FF
 
-C_LONGINT:C283($r; $g; $b)
-$r:=($1 >> 16) & 0x0000FF
-$g:=($1 >> 8) & 0x0000FF
-$b:=$1 & 0x0000FF
-
-C_TEXT:C284($hex)
+var $hex : Text:C284
 $hex:=""
 
-C_LONGINT:C283($i; $val)
-C_TEXT:C284($digits)
+var $i; $val : Integer:C285
+var $digits : Text:C284
 $digits:="0123456789ABCDEF"
 
 For ($i; 1; 3)
@@ -30,4 +25,4 @@ For ($i; 1; 3)
 	$hex:=$hex+$digits[[$val\16+1]]+$digits[[$val%16+1]]
 End for 
 
-$0:="#"+$hex
+$result:="#"+$hex
