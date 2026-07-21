@@ -1,0 +1,254 @@
+{
+    "definition": {
+        "Metabolic": [
+            {
+                "type": "Albumin",
+                "minRange": 3.9,
+                "maxRange": 5.0,
+                "unit": "g/dL",
+                "random": {
+                    "text": "<0,4",
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Albumin:</span> <br/><br/>Eget congue ex. Donec et odio nec nulla semper mollis sed sed lorem. Nullam tempor justo sed velit posuere placerat. Donec quis varius nunc, eget imperdiet metus. Nulla tempus massa efficitur sem bibendum venenatis. Nulla facilisi. Nam ipsum orci, posuere a risus nec, mollis rhoncus enim. Phasellus faucibus nibh ac pretium aliquam.</span>"
+            },
+            {
+                "type": "Aspartate aminotransferase (AST)",
+                "minRange": 3.9,
+                "maxRange": 5.0,
+                "unit": "g/dL",
+                "random": {
+                    "text": "<0,3",
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Aspartate aminotransferase (AST):</span> <br/><br/>Bibendum in ullamcorper eu, fermentum quis leo. In scelerisque dui urna, ac efficitur neque efficitur non. Nullam in hendrerit enim. Nulla nec dapibus lectus, nec auctor urna. Integer quis leo at nisl dapibus faucibus a sit amet turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi nec nisi eros. Integer elit diam, mattis ut risus ut, egestas vulputate tellus. Nulla hendrerit dapibus porta. Nullam viverra maximus urna, in placerat ipsum iaculis at. Quisque hendrerit diam quis maximus ullamcorper. Pellentesque pretium eros sem, et efficitur felis bibendum a.</span>"
+            },
+            {
+                "type": "Bilirubin",
+                "minRange": 10,
+                "maxRange": 19,
+                "unit": "mg/L",
+                "random": {
+                    "min": 2,
+                    "max": 60
+                },
+                "description": "<span><span style=\"font-weight:bold\">Bilirubin:</span> <br/><br/>Curabitur euismod ultrices bibendum. Proin hendrerit vehicula porttitor. Aliquam sed magna vel ipsum ullamcorper scelerisque. Quisque laoreet sit amet dui et posuere. Aliquam euismod, purus at finibus aliquam, neque ipsum eleifend ligula, sed pellentesque purus urna at velit. Duis suscipit aliquam nulla, sodales lacinia libero. Integer ullamcorper ex vitae nibh malesuada rhoncus. Nullam viverra lectus est, vel malesuada neque tincidunt sed. Mauris non purus id eros fermentum vestibulum ut in diam. Maecenas volutpat, metus sed ultricies eleifend, nunc sem tempor est, non dictum odio elit eget massa. Integer vulputate lorem nec ultricies sodales.</span>"
+            },
+            {
+                "type": "Calcium",
+                "minRange": 9.0,
+                "maxRange": 10.5,
+                "unit": "mg/dL",
+                "random": {
+                    "text": "<0,2",
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Calcium:</span> <br/><br/>Sit amet pulvinar lorem mattis et. Nullam augue arcu, bibendum a efficitur in, interdum quis magna. Aenean rutrum dolor eget auctor condimentum. Aliquam lobortis rutrum lectus eget aliquam. In ac rhoncus risus, eu sollicitudin orci. Curabitur et metus id elit faucibus maximus. Suspendisse pulvinar ligula vel mattis tincidunt. Vestibulum maximus dictum felis, sed tincidunt libero maximus eu. Duis at elementum leo, sit amet pellentesque risus. Donec nec erat tempor, venenatis felis venenatis, bibendum tortor. Nam tellus enim, placerat non elit quis, fermentum consectetur lorem.</span>"
+            },
+            {
+                "type": "C-Reactive Protein (CRP)",
+                "minRange": 0,
+                "maxRange": 1,
+                "unit": "mg",
+                "random": {
+                    "text": "<0,3",
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">C-Reactive Protein (CRP):</span> <br/><br/>Quisque vitae ex at purus vehicula luctus. Donec cursus, purus quis aliquam efficitur, odio tellus ultricies risus, non maximus libero justo et dui. Duis id nulla at odio porta imperdiet eu tempor sapien. Etiam pretium a arcu tincidunt venenatis. Phasellus dignissim sem quis sem scelerisque, quis posuere velit ornare. Pellentesque vitae neque lacinia, accumsan nibh sit amet, porttitor neque. Cras luctus, nisl vitae vestibulum vehicula, purus eros malesuada metus, non mollis est enim sit amet ipsum. Vivamus lacus libero, tempus semper lacus vel, blandit blandit felis. Morbi quis eleifend elit. Ut rhoncus non tellus sit amet blandit. Ut tincidunt, neque ac gravida fringilla, purus enim congue augue, at aliquam enim odio fringilla felis.</span>"
+            },
+            {
+                "type": "Chloride",
+                "minRange": 98,
+                "maxRange": 106,
+                "unit": "mEq/L",
+                "random": {
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Chloride:</span> <br/><br/>Faucibus tellus. In in dui at lectus vestibulum hendrerit. Phasellus luctus ex vitae tellus bibendum malesuada. Sed dapibus est blandit neque semper, eget maximus ante euismod. Nulla sagittis sem in mauris pharetra dignissim. Vestibulum et odio et mi consectetur dictum. Donec aliquet vestibulum augue, ut accumsan dolor egestas eu. Maecenas suscipit sem at velit mattis malesuada. Nullam a molestie mauris. Curabitur mollis justo eget consectetur interdum. In hendrerit ex vehicula convallis pulvinar. Vestibulum varius malesuada nisi a vulputate. Aenean condimentum sodales magna, a convallis augue malesuada ac.</span>"
+            },
+            {
+                "type": "Phosphorus",
+                "minRange": 2.4,
+                "maxRange": 4.1,
+                "unit": "mg/dL",
+                "random": {
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Phosphorus:</span> <br/><br/>Sed pellentesque libero gravida sit amet. Ut maximus, urna nec commodo hendrerit, mauris erat suscipit velit, non finibus dui augue non ipsum. Ut interdum commodo justo quis porta. Donec consectetur, augue id consequat viverra, lorem mi gravida nisi, a congue tellus orci vel metus. Morbi pellentesque, massa vel tincidunt condimentum, mauris nunc dapibus nulla, quis sollicitudin elit sapien tristique lectus. Cras lobortis, mauris nec gravida condimentum, ex sapien eleifend elit, vel mattis quam nisi quis nunc. Aliquam sed egestas velit. Maecenas mollis, augue ut condimentum pellentesque, ex felis fermentum purus, eget feugiat lorem lacus non leo. Vivamus ut cursus nisl. Nullam ullamcorper arcu vitae augue vehicula blandit.</span>"
+            },
+            {
+                "type": "Plasma appearance",
+                "random": {
+                    "text": ["Clear", "Blurred", "Opaque"]
+                },
+                "description": "<span><span style=\"font-weight:bold\">Plasma appearance:</span> <br/><br/>Efficitur enim in, vestibulum turpis. Praesent a lorem quis libero blandit pretium. Duis sed vestibulum turpis. Quisque quis suscipit felis. Mauris imperdiet urna ante. Etiam pellentesque dignissim nisl nec convallis. Aenean mauris nunc, auctor et eros eget, pretium sodales enim. Aliquam feugiat sodales sollicitudin. Donec dapibus est et elit dignissim scelerisque. Donec luctus, odio vestibulum sodales ullamcorper, tortor risus laoreet odio, at commodo ipsum leo vitae augue. Duis laoreet cursus commodo. Maecenas rutrum in purus nec ultrices. Nullam viverra, felis in elementum feugiat, risus ligula porttitor dolor, ut cursus enim purus vel neque. Etiam et arcu rutrum, rhoncus nibh a, pulvinar est.</span>"
+            },
+            {
+                "type": "Potassium",
+                "minRange": 3.7,
+                "maxRange": 5.2,
+                "unit": "mEq/L",
+                "random": {
+                    "text": "<0,1",
+                    "min": 0,
+                    "max": 15
+                },
+                "description": "<span><span style=\"font-weight:bold\">Potassium:</span> <br/><br/>Efficitur eu auctor ut, vestibulum quis leo. Nam vitae pharetra magna. Sed imperdiet sollicitudin consequat. Pellentesque eget fringilla odio. Phasellus lorem ligula, convallis et accumsan a, volutpat quis lacus. Duis dignissim metus a nibh vulputate, nec venenatis mi viverra. Sed interdum interdum suscipit. Donec id euismod nisl. Suspendisse semper dictum quam, non vehicula orci sollicitudin sit amet. Pellentesque aliquet venenatis est, quis scelerisque nulla eleifend non. Aenean eget vulputate nulla, vitae aliquam nulla. Quisque ac venenatis nunc. Sed eu eros non nulla feugiat tristique vitae quis nisl. Donec nec sapien accumsan, sagittis mauris a, mollis leo.</span>"
+            }
+        ],
+        "Lipoprotein": [
+            {
+                "type": "Total cholesterol",
+                "minRange": 1,
+                "maxRange": 200,
+                "unit": "mg/dL",
+                "random": {
+                    "text": "<0,1",
+                    "min": 0,
+                    "max": 600
+                },
+                "description": "<span><span style=\"font-weight:bold\">Total cholesterol:</span> <br/><br/>Vitae tincidunt ex. Fusce ac rutrum nulla. Sed volutpat augue eu ipsum tempor finibus. Nulla convallis nisi vel lectus tempus, in consectetur magna auctor. Nunc mauris dolor, vulputate non risus ornare, egestas pharetra dui. Vivamus mollis sit amet ligula et fermentum. Morbi accumsan iaculis lectus vel malesuada. Phasellus sodales vitae neque sed cursus. Aenean bibendum erat ac tortor congue, eu tincidunt nisi gravida. Morbi at lacinia dolor.</span>"
+            },
+            {
+                "type": "Triglycerides",
+                "minRange": 40,
+                "maxRange": 160,
+                "unit": "mg/dL",
+                "random": {
+                    "text": "<0,1",
+                    "min": 0,
+                    "max": 450
+                },
+                "description": "<span><span style=\"font-weight:bold\">Triglycerides:</span> <br/><br/>Aliquam eget sapien dapibus, feugiat nisl sed, sollicitudin leo. Mauris congue, nulla vel volutpat hendrerit, dui dui eleifend dolor, ut accumsan velit sapien vitae arcu. Etiam eget tincidunt erat. Mauris vitae velit ac tortor ultrices tincidunt sed vel risus. Cras pretium quam eget dui fermentum ornare. Praesent laoreet, nunc in feugiat gravida, ex purus suscipit nunc, et convallis leo tellus a sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec aliquam pulvinar ligula. Vivamus fermentum placerat ex eget gravida. Vestibulum finibus urna quis magna luctus sollicitudin. Vestibulum vehicula euismod leo nec tristique.</span>"
+            },
+            {
+                "type": "HDL",
+                "minRange": 1,
+                "maxRange": 200,
+                "unit": "mg/dL",
+                "random": {
+                    "min": 0,
+                    "max": 600
+                },
+                "description": "<span><span style=\"font-weight:bold\">HDL:</span> <br/><br/>Maximus id est id, aliquet placerat risus. Cras et porta lacus, nec egestas nisi. Ut quis lorem rhoncus, tempor velit vel, rutrum ex. Aliquam et placerat libero, eget sollicitudin dolor. Nulla egestas urna justo, quis fermentum arcu faucibus ac. In eu eros non urna interdum convallis egestas ut magna. Donec eu pharetra lorem.</span>"
+            },
+            {
+                "type": "LDL",
+                "minRange": 1,
+                "maxRange": 200,
+                "unit": "mg/dL",
+                "random": {
+                    "text": "<0,1",
+                    "min": 0,
+                    "max": 600
+                },
+                "description": "<span><span style=\"font-weight:bold\">LDL:</span> <br/><br/>Enim nec lorem bibendum sollicitudin. Fusce finibus quam quis risus elementum, vel aliquam nulla hendrerit. Donec feugiat odio non nulla fermentum mattis. Morbi nec bibendum nunc. Donec sed est eget dui consectetur eleifend in id arcu. Cras condimentum metus dolor, convallis egestas nisl mollis at. <br/><br/><span style=\"font-weight:bold\">In a ligula congue:</span> Elementum velit sed, venenatis tortor. Etiam sit amet tortor pharetra, suscipit tortor vitae, laoreet justo. Nam eleifend, sapien quis gravida dictum, nisl nisi interdum nibh, at volutpat risus ipsum nec libero. Pellentesque consequat lorem id purus cursus, non commodo elit scelerisque. Fusce mi mauris, efficitur ac ullamcorper in, posuere vel eros. Nullam nec venenatis diam. Integer interdum id odio vel finibus.</span>"
+            }
+        ],
+        "Hematology": [
+            {
+                "type" :"Hematocrit (Hct)",
+                "minRange": 45,
+                "maxRange": 52,
+                "unit": "%",
+                "random": {
+                    "text": "<0,1",
+                    "min": 10,
+                    "max": 80
+                },
+                "description": "<span><span style=\"font-weight:bold\">Hematocrit (Hct):</span> <br/><br/>Proin mauris ex, tincidunt ac massa vehicula, accumsan pellentesque tellus. Vestibulum vitae orci eros. Sed ac metus consequat, facilisis neque id, imperdiet ipsum. Nunc faucibus, turpis in tincidunt fermentum, mi turpis dictum quam, sit amet lacinia massa leo eget odio. Aliquam fermentum, leo vel aliquam ultrices, ipsum ipsum hendrerit lorem, iaculis volutpat lorem erat fringilla ex. Cras ullamcorper purus ut accumsan imperdiet. Nullam volutpat auctor leo. Ut sagittis quam ullamcorper neque fringilla, non aliquam nisl tristique. Phasellus lacus nibh, iaculis nec ex non, imperdiet cursus diam. Proin erat magna, ultrices eget molestie ac, volutpat vitae mi. Nullam nunc orci, malesuada nec ornare vitae, luctus sit amet nunc. Nunc at vestibulum sapien. Fusce faucibus pharetra diam eget ultricies. Cras non velit efficitur, pellentesque orci eget, pulvinar velit. Sed dictum finibus odio ac efficitur.</span>"
+            },
+            {
+                "type": "Hemoglobin (Hgb)",
+                "minRange": 13,
+                "maxRange": 18,
+                "unit": "g/dL",
+                "random": {
+                    "min": 5,
+                    "max": 60
+                },
+                "description": "<span><span style=\"font-weight:bold\">Hemoglobin (Hgb):</span> <br/><br/>Ac vestibulum enim. Pellentesque lorem leo, sollicitudin non lectus ut, elementum placerat sapien. Vivamus quis tellus eget neque cursus cursus a eget tellus. Curabitur eu porttitor augue. Integer id tortor a leo eleifend pretium vitae sit amet eros. Nam non euismod augue. Phasellus ut placerat sapien, vitae hendrerit ipsum. Curabitur purus lectus, vehicula sed eros sit amet, dictum cursus lacus. Integer quis vehicula lacus. Nullam id massa posuere, porttitor purus id, consectetur velit. Nunc egestas nulla maximus, scelerisque risus pharetra, efficitur nisi. Sed quis ultricies ligula. Vestibulum gravida mauris nisi, at feugiat erat porttitor et. Praesent nunc ante, fermentum ac blandit non, scelerisque at ex. Praesent arcu mauris, ullamcorper sollicitudin sapien eu, facilisis eleifend felis. Fusce sagittis vel ante id finibus.</span>"
+            },
+            {
+                "type": "Mean corpuscular volume (MCV)",
+                "minRange": 80,
+                "maxRange": 100,
+                "unit": "femtoliters",
+                "random": {
+                    "min": 20,
+                    "max": 400
+                },
+                "description": "<span><span style=\"font-weight:bold\">Mean corpuscular volume (MCV):</span> <br/><br/>Consequat dolor et, congue justo. Phasellus non lectus nisl. Duis auctor orci et turpis sagittis, at aliquet sapien ullamcorper. Nulla turpis nulla, feugiat a scelerisque quis, convallis nec massa. Mauris rutrum fringilla nulla, eget dictum lectus ornare ac. Aenean ac ex scelerisque, fermentum urna a, sollicitudin enim. Praesent odio massa, tempus eu erat non, faucibus commodo arcu. Cras sed velit nec libero pellentesque finibus. Aliquam erat volutpat. Vestibulum aliquet felis sit amet arcu accumsan, eget tempor ante viverra.</span>"
+            },
+            {
+                "type": "Mean corpuscular hemoglobin (MCH)",
+                "minRange": 27,
+                "maxRange": 32,
+                "unit": "picograms",
+                "random": {
+                    "min": 5,
+                    "max": 90
+                },
+                "description": "<span><span style=\"font-weight:bold\">Mean corpuscular hemoglobin (MCH):</span> <br/><br/>Lorem in dignissim scelerisque, ipsum libero vehicula dui, et semper nisi leo eget tortor. Proin ut vulputate diam. Vestibulum ultrices semper nulla sit amet suscipit. Nullam accumsan eget nulla nec feugiat. Donec vulputate, tortor in eleifend mattis, tortor justo euismod eros, nec sollicitudin libero justo at nisi. Fusce quis eros dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris sed fringilla libero.</span>"
+            },
+            {
+                "type": "Mean corpuscular hemoglobin concentration (MCHC)",
+                "minRange": 28,
+                "maxRange": 36,
+                "unit": "%",
+                "random": {
+                    "min": 5,
+                    "max": 80
+                },
+                "description": "<span><span style=\"font-weight:bold\">Mean corpuscular hemoglobin concentration (MCHC):</span> <br/><br/>Mi ultrices magna pharetra convallis. Sed volutpat convallis lectus sit amet egestas. Nullam hendrerit a massa vel placerat. Mauris vitae sem porta, malesuada purus condimentum, accumsan ligula. In in risus lobortis quam molestie pharetra in nec libero. Vestibulum tempor est justo, vel cursus dui rhoncus sit amet. Duis congue porta enim. Vivamus rhoncus libero et orci ornare, nec feugiat lorem sollicitudin. Aenean hendrerit aliquam porttitor. Etiam tellus odio, pellentesque vel lacus nec, ullamcorper pharetra leo. Cras sapien enim, egestas vel risus sit amet, ultrices tempus libero. Integer et diam sit amet odio ornare mattis. Aliquam consequat augue ac tristique iaculis. Donec feugiat rhoncus nisi, in tempus est auctor a. Sed vel tortor enim. Fusce vehicula eget leo nec laoreet.</span>"
+            },
+            {
+                "type": "Platelet count",
+                "minRange": 150000,
+                "maxRange": 400000,
+                "unit": "mL",
+                "random": {
+                    "min": 100000,
+                    "max": 1000000
+                },
+                "description": "<span><span style=\"font-weight:bold\">Platelet count:</span> <br/><br/>Mauris a mauris faucibus ullamcorper. Aliquam luctus ipsum dapibus aliquam pharetra. Phasellus vulputate volutpat mollis. Phasellus auctor ornare metus et euismod. Aliquam rhoncus ipsum et arcu maximus, ultrices lobortis dolor lobortis. In quis magna vitae mauris finibus dignissim id sit amet tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>"
+            }
+        ],
+        "Immunology": [
+            {
+                "type" :"Toxoplasmosis gondii",
+                "random": {
+                    "text": ["Imumnized", "Non-imunized"]
+                },
+                "description": "<span><span style=\"font-weight:bold\">Toxoplasmosis gondii:</span> <br/><br/>Fringilla quam ut, convallis nulla. Aenean lectus est, maximus non quam id, ornare placerat lorem. Donec dapibus, enim ac porttitor tristique, nibh justo aliquam ligula, nec imperdiet risus orci at ipsum. Donec maximus ac quam sit amet venenatis. Cras quis turpis at turpis fermentum suscipit. Donec accumsan nulla sit amet purus accumsan vestibulum. Morbi eu nisi cursus, laoreet nibh sed, rhoncus sem. Morbi euismod, leo in viverra rutrum, ante elit aliquet orci, vel suscipit magna neque eget urna. Aenean risus mi, consectetur id justo eu, vehicula pellentesque velit. Donec sollicitudin massa eu diam feugiat porta.</span>"
+            },
+            {
+                "type" :"Tetanus antibody",
+                "random": {
+                    "text": ["Imumnized", "Non-imunized"]
+                },
+                "description": "<span><span style=\"font-weight:bold\">Tetanus antibody:</span> <br/><br/>Suspendisse mattis tellus in nunc mattis, id consectetur nulla tempor. Cras commodo in mauris volutpat rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent rutrum dui et ligula cursus commodo quis et nunc. Donec tempus nulla quis nulla rutrum commodo. Integer tempor feugiat urna iaculis porta. Etiam posuere posuere lorem ullamcorper placerat. Etiam non turpis leo. Maecenas ipsum risus, pretium vitae est eu, varius venenatis enim.</span>"
+            },
+            {
+                "type" :"Mumps serology",
+                "random": {
+                    "text": ["Imumnized", "Non-imunized"]
+                },
+                "description": "<span><span style=\"font-weight:bold\">Mumps serology:</span> <br/><br/>At mi tincidunt vulputate. Integer sollicitudin ipsum a metus fermentum venenatis. Ut tincidunt sapien eget dictum ultrices. Integer facilisis imperdiet diam, sed luctus enim convallis eget. Curabitur viverra lacinia felis eget dignissim. Donec finibus dictum massa. Aenean venenatis rutrum ex sit amet ornare.</span>"
+            },
+            {
+                "type" :"Hepatitis Be antigen",
+                "random": {
+                    "text": ["Imumnized", "Non-imunized"]
+                },
+                "description": "<span><span style=\"font-weight:bold\">Hepatitis Be antigen:</span> <br/><br/>Lectus in sem dapibus varius. Pellentesque quis tempor orci. Aliquam pretium nulla et justo dignissim, at sagittis mi accumsan. Aenean in luctus sapien. Donec a congue mi. Etiam eu orci placerat, gravida justo nec, pretium libero. Mauris blandit tortor ut ullamcorper finibus. Mauris molestie vehicula ante. Curabitur vitae nulla fringilla, vehicula leo sit amet, molestie nulla. Quisque vel lectus nulla. Suspendisse semper purus bibendum tellus molestie varius. Morbi fermentum mattis ipsum, eu consequat eros bibendum eu. In faucibus, massa eget pharetra tincidunt, urna risus vestibulum sem, nec accumsan sem ante sed felis. In volutpat egestas erat et sagittis. Praesent iaculis ac ligula at condimentum.</span>"
+            }
+        ]
+    }
+}
