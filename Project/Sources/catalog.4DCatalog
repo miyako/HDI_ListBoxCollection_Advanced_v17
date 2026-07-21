@@ -2,17 +2,6 @@
 <!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
 <base name="HDI_ListBoxCollection_Advanced_v17" uuid="1194009FAAEF4A3FB143B30F02A27E3D" collation_locale="en">
 	<schema name="DEFAULT_SCHEMA"/>
-	<table name="Table_1" uuid="DB9618A6FCEA4AE6A28551939E52143C" id="1">
-		<field name="ID" uuid="7ACBB98C9ED84A1CBC3A3A79EA45811D" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
-		<field name="Title" uuid="D257A90903824FE18528A3B597D96B52" type="10" never_null="true" id="3"/>
-		<primary_key field_name="ID" field_uuid="7ACBB98C9ED84A1CBC3A3A79EA45811D"/>
-		<table_extra input_form="Input" output_form="Output"/>
-	</table>
-	<index kind="regular" unique_keys="true" uuid="A7451CE9C6E54713AA77CDA31AB7335C" type="7">
-		<field_ref uuid="7ACBB98C9ED84A1CBC3A3A79EA45811D" name="ID">
-			<table_ref uuid="DB9618A6FCEA4AE6A28551939E52143C" name="Table_1"/>
-		</field_ref>
-	</index>
 	<base_extra package_name="HDI_ListBoxCollection_Advanced" structure_file_name="ListBoxCollection" data_file_path=":ListBoxCollection.4DD">
 		<journal_file journal_file_enabled="false"/>
 	</base_extra>
