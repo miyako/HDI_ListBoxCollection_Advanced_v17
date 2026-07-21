@@ -179,7 +179,7 @@ Note: `visibility: hidden` is set in **both** media queries to ensure the rectan
 
 ```4d
 var $fg; $bg : Integer
-OBJECT GET RGB COLORS(*; "refMyColour"; $fg; $bg)
+OBJECT GET RGB COLORS:C1074(*; "refMyColour"; $fg; $bg)
   // $bg contains the resolved fill colour as a longint (0x00RRGGBB)
 ```
 
