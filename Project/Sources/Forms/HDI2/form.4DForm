@@ -46,8 +46,8 @@
 					"sizingY": "grow",
 					"dataSourceTypeHint": "arrayText",
 					"labels": [
-						"説明",
-						"サンプル"
+						":xliff:HDI2_TabDescription",
+						":xliff:HDI2_TabSample"
 					],
 					"action": "GotoPage",
 					"events": [
@@ -161,7 +161,7 @@
 							],
 							"header": {
 								"name": "Header1",
-								"text": "カテゴリ",
+								"text": ":xliff:HDI2_HeaderCategory",
 								"stroke": "automatic",
 								"textAlign": "center",
 								"verticalAlign": "middle"
@@ -297,7 +297,7 @@
 							],
 							"header": {
 								"name": "Header2",
-								"text": "検査項目",
+								"text": ":xliff:HDI2_HeaderTestItem",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "middle"
@@ -329,7 +329,7 @@
 							],
 							"header": {
 								"name": "Header3",
-								"text": "値",
+								"text": ":xliff:HDI2_HeaderValue",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "middle"
@@ -361,7 +361,7 @@
 							],
 							"header": {
 								"name": "Header4",
-								"text": "単位",
+								"text": ":xliff:HDI2_HeaderUnit",
 								"stroke": "automatic",
 								"textAlign": "automatic",
 								"verticalAlign": "middle"
