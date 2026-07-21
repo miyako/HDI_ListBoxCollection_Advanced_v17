@@ -18,6 +18,26 @@
         <source>Collection type list box</source>
         <target>Collection type list box</target>
       </trans-unit>
+      <trans-unit id="BtnQuit4D" resname="BtnQuit4D">
+        <source>Quit 4D</source>
+        <target>Quit 4D</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseViewPro" resname="ErrorLicenseViewPro">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</source>
+        <target>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseViewProSub" resname="ErrorLicenseViewProSub">
+        <source>You must have a valid 4D View Pro license to continue.</source>
+        <target>You must have a valid 4D View Pro license to continue.</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseWritePro" resname="ErrorLicenseWritePro">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</source>
+        <target>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseWriteProSub" resname="ErrorLicenseWriteProSub">
+        <source>You must have a valid 4D Write Pro license to continue.</source>
+        <target>You must have a valid 4D Write Pro license to continue.</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

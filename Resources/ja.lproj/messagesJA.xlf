@@ -18,6 +18,26 @@
         <source>Collection type list box</source>
         <target>コレクション型リストボックス</target>
       </trans-unit>
+      <trans-unit id="BtnQuit4D" resname="BtnQuit4D">
+        <source>Quit 4D</source>
+        <target>4Dを終了</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseViewPro" resname="ErrorLicenseViewPro">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D View Pro feature.</source>
+        <target>申し訳ありません。この"How do I..." (HDI) サンプルは、4D View Pro の機能を紹介しています。</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseViewProSub" resname="ErrorLicenseViewProSub">
+        <source>You must have a valid 4D View Pro license to continue.</source>
+        <target>続行するには、有効な4D View Proライセンスが必要です。</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseWritePro" resname="ErrorLicenseWritePro">
+        <source>Sorry, this "How do I" (HDI) example demonstrates a 4D Write Pro feature.</source>
+        <target>申し訳ありません。この"How do I..." (HDI) サンプルは、4D Write Pro の機能を紹介しています。</target>
+      </trans-unit>
+      <trans-unit id="ErrorLicenseWriteProSub" resname="ErrorLicenseWriteProSub">
+        <source>You must have a valid 4D Write Pro license to continue.</source>
+        <target>続行するには、有効な4D Write Proライセンスが必要です。</target>
+      </trans-unit>
     </body>
   </file>
 </xliff>
