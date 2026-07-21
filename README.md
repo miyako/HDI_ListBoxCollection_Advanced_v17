@@ -39,3 +39,9 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 | Liquid glass buttons | 1,105,102 | 7,292 | 18 |
 | Hide subroutine methods | 859,694 | 6,074 | 17 |
 | **Total** | **25,539,511** | **127,994** | **425** |
+
+## Screenshots
+
+<img width="724" height="592" alt="Screenshot 2026-07-22 at 2 05 03" src="https://github.com/user-attachments/assets/85332c6f-8558-42ad-b712-4b93cdca62f1" />
+<img width="1050" height="592" alt="Screenshot 2026-07-22 at 2 05 08" src="https://github.com/user-attachments/assets/d7c1b2c1-01e4-4da5-961f-b1d5e993ca00" />
+<img width="1050" height="592" alt="Screenshot 2026-07-22 at 2 05 18" src="https://github.com/user-attachments/assets/8d5f77d4-e9cf-4c81-80ec-01708404178a" />
