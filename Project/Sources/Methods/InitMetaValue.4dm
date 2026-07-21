@@ -1,4 +1,4 @@
-//%attributes = {}
+//%attributes = {"invisible":true}
   // Build meta objects using colours from hidden reference rectangles
   // so that the listbox styling adapts to dark/light mode.
 
