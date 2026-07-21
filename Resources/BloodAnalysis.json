@@ -224,28 +224,28 @@
             {
                 "type" :"Toxoplasmosis gondii",
                 "random": {
-                    "text": ["Imumnized", "Non-imunized"]
+                    "text": ["Immunized", "Non-immunized"]
                 },
                 "description": "<span><span style=\"font-weight:bold\">Toxoplasmosis gondii:</span> <br/><br/>Fringilla quam ut, convallis nulla. Aenean lectus est, maximus non quam id, ornare placerat lorem. Donec dapibus, enim ac porttitor tristique, nibh justo aliquam ligula, nec imperdiet risus orci at ipsum. Donec maximus ac quam sit amet venenatis. Cras quis turpis at turpis fermentum suscipit. Donec accumsan nulla sit amet purus accumsan vestibulum. Morbi eu nisi cursus, laoreet nibh sed, rhoncus sem. Morbi euismod, leo in viverra rutrum, ante elit aliquet orci, vel suscipit magna neque eget urna. Aenean risus mi, consectetur id justo eu, vehicula pellentesque velit. Donec sollicitudin massa eu diam feugiat porta.</span>"
             },
             {
                 "type" :"Tetanus antibody",
                 "random": {
-                    "text": ["Imumnized", "Non-imunized"]
+                    "text": ["Immunized", "Non-immunized"]
                 },
                 "description": "<span><span style=\"font-weight:bold\">Tetanus antibody:</span> <br/><br/>Suspendisse mattis tellus in nunc mattis, id consectetur nulla tempor. Cras commodo in mauris volutpat rutrum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent rutrum dui et ligula cursus commodo quis et nunc. Donec tempus nulla quis nulla rutrum commodo. Integer tempor feugiat urna iaculis porta. Etiam posuere posuere lorem ullamcorper placerat. Etiam non turpis leo. Maecenas ipsum risus, pretium vitae est eu, varius venenatis enim.</span>"
             },
             {
                 "type" :"Mumps serology",
                 "random": {
-                    "text": ["Imumnized", "Non-imunized"]
+                    "text": ["Immunized", "Non-immunized"]
                 },
                 "description": "<span><span style=\"font-weight:bold\">Mumps serology:</span> <br/><br/>At mi tincidunt vulputate. Integer sollicitudin ipsum a metus fermentum venenatis. Ut tincidunt sapien eget dictum ultrices. Integer facilisis imperdiet diam, sed luctus enim convallis eget. Curabitur viverra lacinia felis eget dignissim. Donec finibus dictum massa. Aenean venenatis rutrum ex sit amet ornare.</span>"
             },
             {
                 "type" :"Hepatitis Be antigen",
                 "random": {
-                    "text": ["Imumnized", "Non-imunized"]
+                    "text": ["Immunized", "Non-immunized"]
                 },
                 "description": "<span><span style=\"font-weight:bold\">Hepatitis Be antigen:</span> <br/><br/>Lectus in sem dapibus varius. Pellentesque quis tempor orci. Aliquam pretium nulla et justo dignissim, at sagittis mi accumsan. Aenean in luctus sapien. Donec a congue mi. Etiam eu orci placerat, gravida justo nec, pretium libero. Mauris blandit tortor ut ullamcorper finibus. Mauris molestie vehicula ante. Curabitur vitae nulla fringilla, vehicula leo sit amet, molestie nulla. Quisque vel lectus nulla. Suspendisse semper purus bibendum tellus molestie varius. Morbi fermentum mattis ipsum, eu consequat eros bibendum eu. In faucibus, massa eget pharetra tincidunt, urna risus vestibulum sem, nec accumsan sem ante sed felis. In volutpat egestas erat et sagittis. Praesent iaculis ac ligula at condimentum.</span>"
             }
