@@ -5,15 +5,15 @@
 C_LONGINT:C283($fg; $bg)
 
   // Read the rendered fill colours from the hidden reference objects
-OBJECT GET RGB COLORS:C382(*; "refDoubleOutOfRange"; $fg; $bg)
+OBJECT GET RGB COLORS:C1074(*; "refDoubleOutOfRange"; $fg; $bg)
 C_TEXT:C284($doubleOutOfRangeFill)
 $doubleOutOfRangeFill:=RGBToHex($bg)
 
-OBJECT GET RGB COLORS:C382(*; "refOutOfRange"; $fg; $bg)
+OBJECT GET RGB COLORS:C1074(*; "refOutOfRange"; $fg; $bg)
 C_TEXT:C284($outOfRangeFill)
 $outOfRangeFill:=RGBToHex($bg)
 
-OBJECT GET RGB COLORS:C382(*; "refPerfectValue"; $fg; $bg)
+OBJECT GET RGB COLORS:C1074(*; "refPerfectValue"; $fg; $bg)
 C_TEXT:C284($perfectValueFill)
 $perfectValueFill:=RGBToHex($bg)
 
