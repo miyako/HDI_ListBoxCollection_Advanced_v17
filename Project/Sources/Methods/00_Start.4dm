@@ -10,7 +10,7 @@ Case of
 	: (Count parameters:C259=0)
 		
 		If (Application version:C493<"1650")
-			ALERT:C41("Sorry, this \"How do I\" (HDI) example must be used with a newer version of 4D (v16 R5 and above)"; "Quit")
+			ALERT:C41(Get localized string:C991("AlertVersionTooOld"); Get localized string:C991("AlertButtonQuit"))
 			QUIT 4D:C291
 		Else 
 			$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; 0)
@@ -28,10 +28,10 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:="複数のリストボックスに複階層コレクションを表示するの？"
+		$options.title:=Get localized string:C991("HDI_Title")
 		
 		$options.blog:="blog.4d.com"
-		$options.info:="コレクション型リストボックス"  //ex : "4D View Pro feature"
+		$options.info:=Get localized string:C991("HDI_Info")
 		
 		$options.minimumVersion:="1700"
 		
