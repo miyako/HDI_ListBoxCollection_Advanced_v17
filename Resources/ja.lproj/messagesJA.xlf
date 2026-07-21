@@ -10,6 +10,10 @@
         <source>Quit</source>
         <target>終了</target>
       </trans-unit>
+      <trans-unit id="BtnClose" resname="BtnClose">
+        <source>Close</source>
+        <target>閉じる</target>
+      </trans-unit>
       <trans-unit id="HDI_Title" resname="HDI_Title">
         <source>Display a multi-level collection in multiple list boxes?</source>
         <target>複数のリストボックスに複階層コレクションを表示するの？</target>

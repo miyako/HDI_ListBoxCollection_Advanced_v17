@@ -54,7 +54,7 @@ Case of
 			If (Application version:C493<Form:C1466.minimumVersion)
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Close")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string:C991("BtnClose"))
 				
 				$maintext:=OBJECT Get title:C1068(*; "ErrorMainText")
 				$maintext:=Replace string:C233($maintext; "{version}"; $version)
@@ -73,7 +73,7 @@ Case of
 			If (Not:C34(Is license available:C714(Form:C1466.license)))
 				
 				Form:C1466.quit:=True:C214
-				OBJECT SET TITLE:C194(*; "BtnDemo"; "Close")
+				OBJECT SET TITLE:C194(*; "BtnDemo"; Localized string:C991("BtnClose"))
 				
 				Case of 
 						
