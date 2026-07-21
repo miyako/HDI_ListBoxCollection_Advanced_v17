@@ -21,4 +21,21 @@ Each branch represents a distinct modernisation effort, guided by a correspondin
 | [`miyako-hide-subroutine-methods`](../../tree/miyako-hide-subroutine-methods) | Hide subroutines and form-dependent methods from the Run Method dialog | [method.visibility.instructions.md](.github/instructions/method.visibility.instructions.md) |
 | [`miyako-replace-m-quit-with-quit-action`](../../tree/miyako-replace-m-quit-with-quit-action) | Replace legacy menu method wrappers (e.g. `m_Quit`) with 4D standard actions | [menu.instructions.md](.github/instructions/menu.instructions.md) |
 | [`miyako-liquid-glass-buttons`](../../tree/miyako-liquid-glass-buttons) | Adapt buttons and controls for macOS Tahoe Liquid Glass appearance using CSS form-theme media queries | [tahoe.css.instructions.md](.github/instructions/tahoe.css.instructions.md) |
+| [`miyako-disable-truncate-ellipsis`](../../tree/miyako-disable-truncate-ellipsis) | Disable truncate-with-ellipsis on all listbox columns | [listbox.instructions.md](.github/instructions/listbox.instructions.md) |
+
+## Copilot Token Usage
+
+All sessions used **Claude Opus 4.6** via GitHub Copilot.
+
+| Session | Input Tokens | Output Tokens | Turns |
+|---------|-------------:|--------------:|------:|
+| Sync main with origin | 7,147,562 | 20,999 | 116 |
+| XLIFF localisation | 4,787,225 | 24,720 | 80 |
+| Disable truncate ellipsis | 4,276,447 | 14,753 | 58 |
+| Modernise HDI start dialog | 3,417,828 | 18,666 | 67 |
+| Dark mode support | 2,524,060 | 22,489 | 46 |
+| Replace m_quit with quit action | 1,421,593 | 13,001 | 23 |
+| Liquid glass buttons | 1,105,102 | 7,292 | 18 |
+| Hide subroutine methods | 859,694 | 6,074 | 17 |
+| **Total** | **25,539,511** | **127,994** | **425** |
 | [`miyako-disable-truncate-ellipsis`](../../tree/miyako-disable-truncate-ellipsis) | Disable truncate-with-ellipsis and automatic-column-resize on all listbox columns | [listbox.instructions.md](.github/instructions/listbox.instructions.md) |
