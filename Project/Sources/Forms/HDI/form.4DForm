@@ -29,6 +29,7 @@
 					"height": 560,
 					"sizingX": "grow",
 					"sizingY": "grow",
+					"class": "hdi-form-bg",
 					"stroke": "transparent"
 				},
 				"Line": {

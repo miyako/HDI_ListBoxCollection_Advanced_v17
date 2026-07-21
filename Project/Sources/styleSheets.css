@@ -4,6 +4,10 @@
 
 @media (prefers-color-scheme: light) {
 
+	.hdi-form-bg {
+		fill: #FFFFFF;
+	}
+
 	.hdi-label {
 		stroke: #212121;
 	}
@@ -23,6 +27,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
+	.hdi-form-bg {
+		fill: #1E1E1E;
+	}
 
 	.hdi-label {
 		stroke: #E0E0E0;
