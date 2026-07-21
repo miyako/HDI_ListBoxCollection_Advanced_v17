@@ -10,7 +10,7 @@ Case of
 	: (Count parameters:C259=0)
 		
 		If (Application version:C493<"1650")
-			ALERT:C41(Get localized string:C991("AlertVersionTooOld"); Get localized string:C991("AlertButtonQuit"))
+			ALERT:C41(Localized string:C991("AlertVersionTooOld"); Localized string:C991("AlertButtonQuit"))
 			QUIT 4D:C291
 		Else 
 			$ps:=New process:C317(Current method name:C684; 0; Current method name:C684; 0)
@@ -28,10 +28,10 @@ Case of
 		
 		$options:=New object:C1471
 		
-		$options.title:=Get localized string:C991("HDI_Title")
+		$options.title:=Localized string:C991("HDI_Title")
 		
 		$options.blog:="blog.4d.com"
-		$options.info:=Get localized string:C991("HDI_Info")
+		$options.info:=Localized string:C991("HDI_Info")
 		
 		$options.minimumVersion:="1700"
 		
