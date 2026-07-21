@@ -133,7 +133,7 @@
 					"selectionMode": "single",
 					"scrollbarHorizontal": "automatic",
 					"scrollbarVertical": "hidden",
-					"alternateFill": "#F8FCFF",
+					"alternateFill": "automaticAlternate",
 					"textAlign": "center",
 					"verticalAlign": "middle",
 					"events": [
@@ -152,7 +152,6 @@
 							"enterable": false,
 							"stroke": "automatic",
 							"fill": "automatic",
-							"alternateFill": "#F8FCFF",
 							"textAlign": "center",
 							"verticalAlign": "middle",
 							"events": [

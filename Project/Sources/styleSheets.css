@@ -1,0 +1,43 @@
+/* ============================================================
+   Supports: prefers-color-scheme (light/dark)
+   ============================================================ */
+
+@media (prefers-color-scheme: light) {
+
+	.hdi-label {
+		stroke: #212121;
+	}
+
+	.hdi-text-muted {
+		stroke: #696969;
+	}
+
+	.hdi-link {
+		stroke: #1E90FF;
+	}
+
+	.hdi-panel-bg {
+		fill: #C0C0C0;
+	}
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+	.hdi-label {
+		stroke: #E0E0E0;
+	}
+
+	.hdi-text-muted {
+		stroke: #A0A0A0;
+	}
+
+	.hdi-link {
+		stroke: #5CB8FF;
+	}
+
+	.hdi-panel-bg {
+		fill: #3A3A3A;
+	}
+
+}
