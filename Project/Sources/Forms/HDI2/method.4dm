@@ -44,9 +44,12 @@ Case of
 		colLastName.push("Beal")
 		colLastName.push("Guenther")
 		
+		var $exportedDataFile : 4D:C1709.File
+		$exportedDataFile:=File:C1566(Localized document path:C1105("Table_1.json"); fk platform path:K87:2)
+		var $allRecords : Collection
+		$allRecords:=JSON Parse:C1218($exportedDataFile.getText())
 		ARRAY TEXT:C222(arrTitle; 0)
-		ALL RECORDS:C47([Table_1:1])
-		SELECTION TO ARRAY:C260([Table_1:1]Title:3; arrTitle)
+		COLLECTION TO ARRAY:C1562($allRecords; arrTitle; "Title")
 		
 		If (Is macOS:C1572)
 			ST SET ATTRIBUTES:C1093(arrTitle{1}; ST Start text:K78:15; ST End text:K78:16; Attribute text size:K65:6; 16)
