@@ -87,8 +87,6 @@ Here's my assessment based on your session history:
 - **Dark mode support** — the agent used a non-existent 4D command (`_O_REDRAW`). Plan would have surfaced the approach for you to vet first.
 - **Modernise HDI** — 15 turns with several "you didn't do X" corrections. Seeing the plan upfront would have caught omissions.
 
-**TL;DR:** Your interactive instinct was correct for discovery sessions. Going forward, use **plan** for multi-file/multi-step tasks where 4D-specific knowledge matters, and **autopilot** for mechanical changes where your `.github/instructions` give enough context.
-
 ## Screenshots
 
 <img width="724" height="592" alt="Screenshot 2026-07-22 at 2 05 03" src="https://github.com/user-attachments/assets/85332c6f-8558-42ad-b712-4b93cdca62f1" />
