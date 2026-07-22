@@ -4,7 +4,7 @@ A 4D v17 **HDI** (How Do I) binary database demonstrating advanced list box coll
 
 ## Origin
 
-This project started as `HDI_ListBoxCollection_Advanced`, a binary `.4DB` example database originally distributed with 4D v17. It was converted to the modern project architecture (`.4DProject`) using 4D 21's built-in binary-to-project conversion tool.
+This project started as a binary `.4DB` example database originally distributed with 4D v17. It was converted to the modern project architecture (`.4DProject`) using 4D 21's built-in binary-to-project conversion tool.
 
 - **Blog post:** [Multilevel collection in different listboxes](https://blog.4d.com/multilevel-collection-in-different-listboxes/)
 - **Original download:** [HDI_ListBoxCollection_Advanced_v17.zip](https://download.4d.com/4DBlog/Tips/4D_v17/HDI_ListBoxCollection_Advanced_v17.zip)
