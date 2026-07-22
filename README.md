@@ -39,7 +39,7 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 | Hide subroutine methods | 859,694 | 6,074 | 17 |
 | **Total** | **25,539,511** | **127,994** | **425** |
 
-### Model Review
+### Model Selection Guidance
 
 | Session | Turns | Why cheaper works |
 |---|---|---|
@@ -70,6 +70,24 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 - **Opus 4.6** → complex multi-file refactors, architectural decisions, unfamiliar codebases, creative problem-solving
 
 Sonnet 5 is the sweet spot for ~70% of coding work. Save Opus for when you need deeper reasoning or are working across many interconnected files.
+
+### Mode Selection Guidance
+
+Here's my assessment based on your session history:
+
+**Interactive was the right call for most of these.** Many sessions had mid-stream corrections (wrong 4D command names, missed requirements, URL fixes). The XLIFF session (19 turns), modernise session (15 turns), and sync/setup session (25 turns) all needed real-time steering — autopilot would have gone off-track.
+
+**Now with documented instructions, these types are autopilot-ready:**
+- Simple property changes ("disable truncate ellipsis", "liquid glass buttons", "hide subroutine methods") — clear spec, mechanical edits
+- "Replace m_quit with quit action" — well-scoped refactor
+- PR creation / session summaries — formulaic end-of-session steps
+
+**Plan mode would have helped with:**
+- **XLIFF localisation** — complex multi-file task where the agent missed capitalised language codes and used wrong command names. A plan review would have caught scope issues before execution.
+- **Dark mode support** — the agent used a non-existent 4D command (`_O_REDRAW`). Plan would have surfaced the approach for you to vet first.
+- **Modernise HDI** — 15 turns with several "you didn't do X" corrections. Seeing the plan upfront would have caught omissions.
+
+**TL;DR:** Your interactive instinct was correct for discovery sessions. Going forward, use **plan** for multi-file/multi-step tasks where 4D-specific knowledge matters, and **autopilot** for mechanical changes where your `.github/instructions` give enough context.
 
 ## Screenshots
 
