@@ -73,8 +73,6 @@ Sonnet 5 is the sweet spot for ~70% of coding work. Save Opus for when you need 
 
 ### Mode Selection Guidance
 
-Here's my assessment based on your session history:
-
 **Interactive was the right call for most of these.** Many sessions had mid-stream corrections (wrong 4D command names, missed requirements, URL fixes). The XLIFF session (19 turns), modernise session (15 turns), and sync/setup session (25 turns) all needed real-time steering — autopilot would have gone off-track.
 
 **Now with documented instructions, these types are autopilot-ready:**
@@ -86,6 +84,8 @@ Here's my assessment based on your session history:
 - **XLIFF localisation** — complex multi-file task where the agent missed capitalised language codes and used wrong command names. A plan review would have caught scope issues before execution.
 - **Dark mode support** — the agent used a non-existent 4D command (`_O_REDRAW`). Plan would have surfaced the approach for you to vet first.
 - **Modernise HDI** — 15 turns with several "you didn't do X" corrections. Seeing the plan upfront would have caught omissions.
+
+Use **plan** for multi-file/multi-step tasks where 4D-specific knowledge matters, and **autopilot** for mechanical changes where `.github/instructions` give enough context.
 
 ## Screenshots
 
