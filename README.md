@@ -39,6 +39,38 @@ All sessions used **Claude Opus 4.6** via GitHub Copilot.
 | Hide subroutine methods | 859,694 | 6,074 | 17 |
 | **Total** | **25,539,511** | **127,994** | **425** |
 
+### Model Review
+
+| Session | Turns | Why cheaper works |
+|---|---|---|
+| **Token usage summary** | 13 | Pure data retrieval/reporting — Haiku 4.5 is fine |
+| **Sync main with origin** | 116 | Git operations, no complex reasoning — Sonnet 5 |
+| **Replace m_quit with quit action** | 23 | Mechanical rename/refactor — Sonnet 5 |
+| **Hide subroutine methods** | 17 | Targeted, well-scoped code edit — Sonnet 5 |
+
+### Borderline (Sonnet 5 likely sufficient):
+
+| Session | Turns | Notes |
+|---|---|---|
+| **Liquid glass buttons** | 18 | UI styling — Sonnet handles CSS/UI well |
+| **Disable truncate ellipsis** | 58 | Focused change, many turns suggest iteration — Sonnet |
+
+### Opus justified (complex/creative tasks):
+
+| Session | Turns | Why Opus helps |
+|---|---|---|
+| **Modernise HDI start dialog** | 67 | Architectural decisions, large refactor |
+| **Xliff localisation** | 80 | Cross-cutting i18n, many files |
+| **Dark mode support** | 46 | Feature design + implementation |
+
+### General model selection heuristic:
+
+- **Haiku 4.5** → simple lookups, summaries, git ops, Q&A
+- **Sonnet 5** → most coding tasks: refactors, bug fixes, focused features, test writing
+- **Opus 4.6** → complex multi-file refactors, architectural decisions, unfamiliar codebases, creative problem-solving
+
+Sonnet 5 is the sweet spot for ~70% of coding work. Save Opus for when you need deeper reasoning or are working across many interconnected files.
+
 ## Screenshots
 
 <img width="724" height="592" alt="Screenshot 2026-07-22 at 2 05 03" src="https://github.com/user-attachments/assets/85332c6f-8558-42ad-b712-4b93cdca62f1" />
