@@ -1,17 +1,51 @@
+![version](https://img.shields.io/badge/version-20%2B-E23089)
+![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue)
+
 # HDI_ListBoxCollection_Advanced_v17
 
-A 4D v17 **HDI** (How Do I) binary database demonstrating advanced list box collection features, converted to a 4D project using 4D 21. The codebase was then updated and cleaned up with the help of **GitHub Copilot**.
+Driving several master/detail collection list boxes from one multilevel object and styling their rows per value with a meta expression. Originally published by 4D as a **HDI** (*How Do I*) example for **4D v17**; converted from the binary `.4DB` to the `.4DProject` architecture so it runs on current 4D releases.
 
-## Origin
+## What it demonstrates
 
-This project started as a binary `.4DB` example database originally distributed with 4D v17. It was converted to the modern project architecture (`.4DProject`) using 4D 21's built-in binary-to-project conversion tool.
+- Feeding three collection-type list boxes at different levels from a single nested object (`oExam.results` -> `categorySelected.test` -> `testSelected.info`).
+- Cascading master/detail selection driven by `currentItemSource` (`categorySelected`, `testSelected`) with no code -- selecting a category reveals its tests, selecting a test reveals its description.
+- Per-row conditional styling through a list box `metaSource` method (`Decorate`), which returns a style object built once in `InitMetaValue`.
+- Deriving list box fill colours at runtime from hidden reference rectangles with `OBJECT GET RGB COLORS`, converted to CSS hex by `RGBToHex`, so styling tracks light/dark mode.
+- Generating randomised demo data from a JSON template (`bloodanalysis.json`) with `JSON Parse`, `New object` and `Random`.
+- Applying multi-style rich text to a title cell with `ST SET ATTRIBUTES`, with a platform-specific font size.
 
-- **Blog post:** [Multilevel collection in different listboxes](https://blog.4d.com/multilevel-collection-in-different-listboxes/)
-- **Original download:** [HDI_ListBoxCollection_Advanced_v17.zip](https://download.4d.com/4DBlog/Tips/4D_v17/HDI_ListBoxCollection_Advanced_v17.zip)
+## Key commands
 
-## Branches
+| Command | Used for |
+|---|---|
+| `New collection` | Seeding the first/last name pools on form load |
+| `JSON Parse` | Reading `Table_1.json` and `bloodanalysis.json` templates |
+| `Document to text` / `Get 4D folder` | Locating `bloodanalysis.json` in the resources folder |
+| `New object` | Assembling the nested exam/category/test result object |
+| `Random` | Picking random names and generating in-range test values |
+| `OBJECT GET RGB COLORS` | Reading fill colours from hidden reference rectangles |
+| `ST SET ATTRIBUTES` | Styling the title cell rich text |
+| `OB Get type` | Branching row style on numeric vs text values in `Decorate` |
+| `COLLECTION TO ARRAY` | Extracting `Title` values into `arrTitle` |
 
-Each branch represents a distinct modernisation effort, guided by a corresponding Copilot instruction file.
+## How it works
+
+`00_Start` opens the `HDI` splash form; its demo button opens `HDI2`, the demo. `HDI2/method.4dm` runs on `On Load`: it builds the `colName`/`colLastName` name pools, loads `Table_1.json` for the title, then calls `GenerateResult` and `InitMetaValue`.
+
+`GenerateResult` reads `bloodanalysis.json` from the resources folder and walks its `definition` with `For each`, building a collection of categories, each holding a collection of tests with randomised in-range `value`s, into `oExam.results`. The three list boxes bind to this one object: the categories box shows `oExam.results`, the tests box shows `categorySelected.test`, and the info panel shows `testSelected.info`. The `currentItemSource` bindings (`categorySelected`, `testSelected`) wire the drill-down automatically.
+
+The most interesting piece is the styling pipeline. `InitMetaValue` reads three hidden reference rectangles (`refDoubleOutOfRange`, `refOutOfRange`, `refPerfectValue`) with `OBJECT GET RGB COLORS`, converts each background to a CSS hex string with `RGBToHex`, and stores a `Form.meta` object of style variants. The tests list box declares `metaSource: "Decorate"`; `Decorate` runs per row, inspects `This.value` against `This.min`/`This.max` (or matches text values) and returns the matching `Form.meta` variant, so out-of-range results are highlighted.
+
+## Points of interest
+
+- Row colours are not hardcoded -- they are sampled from off-screen reference objects at runtime, which is how the demo stays correct under dark mode.
+- The three list boxes share one source object; there is no duplicated data, only different `dataSource` depths into `oExam`.
+- `Decorate` uses `This` to reference the current row element and returns a style object, the collection list box "meta expression" pattern.
+- `GenerateResult` is bound to `btnLoad`, so the reload button regenerates fresh random results without reopening the form.
+
+## Modernisation notes
+
+Converted from the original binary `.4DB` to a 4D project. Each branch below is a self-contained modernisation step.
 
 | Branch | Description | Instructions |
 |--------|-------------|--------------|
@@ -23,69 +57,14 @@ Each branch represents a distinct modernisation effort, guided by a correspondin
 | [`miyako-liquid-glass-buttons`](../../tree/miyako-liquid-glass-buttons) | Adapt buttons and controls for macOS Tahoe Liquid Glass appearance using CSS form-theme media queries | [tahoe.css.instructions.md](.github/instructions/tahoe.css.instructions.md) |
 | [`miyako-disable-truncate-ellipsis`](../../tree/miyako-disable-truncate-ellipsis) | Disable truncate-with-ellipsis and automatic-column-resize on all listbox columns | [listbox.instructions.md](.github/instructions/listbox.instructions.md) |
 
-## Copilot Token Usage
+## References
 
-All sessions used **Claude Opus 4.6** via GitHub Copilot.
-
-| Session | Input Tokens | Output Tokens | Turns |
-|---------|-------------:|--------------:|------:|
-| Sync main with origin | 7,147,562 | 20,999 | 116 |
-| XLIFF localisation | 4,787,225 | 24,720 | 80 |
-| Disable truncate ellipsis | 4,276,447 | 14,753 | 58 |
-| Modernise HDI start dialog | 3,417,828 | 18,666 | 67 |
-| Dark mode support | 2,524,060 | 22,489 | 46 |
-| Replace m_quit with quit action | 1,421,593 | 13,001 | 23 |
-| Liquid glass buttons | 1,105,102 | 7,292 | 18 |
-| Hide subroutine methods | 859,694 | 6,074 | 17 |
-| **Total** | **25,539,511** | **127,994** | **425** |
-
-### Model Selection Guidance
-
-| Session | Turns | Why cheaper works |
-|---|---|---|
-| **Token usage summary** | 13 | Pure data retrieval/reporting — Haiku 4.5 is fine |
-| **Sync main with origin** | 116 | Git operations, no complex reasoning — Sonnet 5 |
-| **Replace m_quit with quit action** | 23 | Mechanical rename/refactor — Sonnet 5 |
-| **Hide subroutine methods** | 17 | Targeted, well-scoped code edit — Sonnet 5 |
-
-### Borderline (Sonnet 5 likely sufficient):
-
-| Session | Turns | Notes |
-|---|---|---|
-| **Liquid glass buttons** | 18 | UI styling — Sonnet handles CSS/UI well |
-| **Disable truncate ellipsis** | 58 | Focused change, many turns suggest iteration — Sonnet |
-
-### Opus justified (complex/creative tasks):
-
-| Session | Turns | Why Opus helps |
-|---|---|---|
-| **Modernise HDI start dialog** | 67 | Architectural decisions, large refactor |
-| **Xliff localisation** | 80 | Cross-cutting i18n, many files |
-| **Dark mode support** | 46 | Feature design + implementation |
-
-### General model selection heuristic:
-
-- **Haiku 4.5** → simple lookups, summaries, git ops, Q&A
-- **Sonnet 5** → most coding tasks: refactors, bug fixes, focused features, test writing
-- **Opus 4.6** → complex multi-file refactors, architectural decisions, unfamiliar codebases, creative problem-solving
-
-Sonnet 5 is the sweet spot for ~70% of coding work. Save Opus for when you need deeper reasoning or are working across many interconnected files.
-
-### Mode Selection Guidance
-
-**Interactive was the right call for most of these.** Many sessions had mid-stream corrections (wrong 4D command names, missed requirements, URL fixes). The XLIFF session (19 turns), modernise session (15 turns), and sync/setup session (25 turns) all needed real-time steering — autopilot would have gone off-track.
-
-**Now with documented instructions, these types are autopilot-ready:**
-- Simple property changes ("disable truncate ellipsis", "liquid glass buttons", "hide subroutine methods") — clear spec, mechanical edits
-- "Replace m_quit with quit action" — well-scoped refactor
-- PR creation / session summaries — formulaic end-of-session steps
-
-**Plan mode would have helped with:**
-- **XLIFF localisation** — complex multi-file task where the agent missed capitalised language codes and used wrong command names. A plan review would have caught scope issues before execution.
-- **Dark mode support** — the agent used a non-existent 4D command (`_O_REDRAW`). Plan would have surfaced the approach for you to vet first.
-- **Modernise HDI** — 15 turns with several "you didn't do X" corrections. Seeing the plan upfront would have caught omissions.
-
-Use **plan** for multi-file/multi-step tasks where 4D-specific knowledge matters, and **autopilot** for mechanical changes where `.github/instructions` give enough context.
+- [4D blog: Multilevel collection in different listboxes](https://blog.4d.com/multilevel-collection-in-different-listboxes/)
+- [4D documentation: List box overview](https://developer.4d.com/docs/FormObjects/listboxOverview)
+- [4D documentation: OBJECT GET RGB COLORS](https://developer.4d.com/docs/commands/object-get-rgb-colors)
+- [4D documentation: JSON Parse](https://developer.4d.com/docs/commands/json-parse)
+- Original download: [HDI_ListBoxCollection_Advanced_v17.zip](https://download.4d.com/4DBlog/Tips/4D_v17/HDI_ListBoxCollection_Advanced_v17.zip)
+- Index of v16/v17 HDIs: [miyako/4d-hdi](https://github.com/miyako/4d-hdi)
 
 ## Screenshots
 
